@@ -27,4 +27,4 @@ s3cmd put /backup_folder/backup_`date '+%Y_%m_%d'`.sql s3://mysql_backup/backup_
 </pre>
 use <pre>crontab -e</pre> to edit crontab task as below
 
-</pre>0 3 * * * sh backup_command</pre>
+<pre>0 3 * * * sh backup_command</pre>
