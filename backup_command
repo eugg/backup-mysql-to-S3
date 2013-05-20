@@ -1,0 +1,2 @@
+mysqldump -u DB_USER -pDB_PASSWORD DB_NAME > /backup_folder/backup_`date '+%Y_%m_%d'`.sql
+s3cmd put /backup_folder/backup_`date '+%Y_%m_%d'`.sql s3://mysql_backup/backup_`date '+%Y_%m_%d'`.sql 
